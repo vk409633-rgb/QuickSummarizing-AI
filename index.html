@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>QuickSummarize AI | Fast, AI-Powered Note Summarization</title>
+    <meta name="description" content="Instantly generate concise and detailed summaries of your notes, articles, and documents with QuickSummarize AI. Powered by Gemini for fast, accurate results. Try it for free!">
+    <meta name="keywords" content="AI summarizer, note summarizer, text summarizer, Gemini API, productivity tool, AI notes">
+    <link rel="canonical" href="/" />
+    
+    <!-- Google AdSense -->
+    <meta name="google-adsense-account" content="ca-pub-7431808618156384">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7431808618156384"
+     crossorigin="anonymous"></script>
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="QuickSummarize AI | Fast, AI-Powered Note Summarization">
+    <meta property="og:description" content="Transform long texts into clean, concise summaries in seconds. Our AI tool helps you grasp key points faster.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1677756119517-756a188d2d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAzNDV8MHwxfGFsbHx8fHx8fHx8fDE3MTk5MjI4OTZ8&ixlib=rb-4.0.3&q=80&w=1200">
+    <meta property="og:image:alt" content="An abstract image representing artificial intelligence and data processing.">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QuickSummarize AI | Fast, AI-Powered Note Summarization">
+    <meta name="twitter:description" content="Save time and understand more with our AI-powered text summarizer. Paste your text, get a summary.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1677756119517-756a188d2d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAzNDV8MHwxfGFsbHx8fHx8fHx8fDE3MTk5MjI4OTZ8&ixlib=rb-4.0.3&q=80&w=1200">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "QuickSummarize AI",
+      "description": "An AI-powered note summarizer that provides fast, concise summaries of any text. Features a free tier for brief summaries and showcases monetization strategies like pro features and affiliate links, all built with a focus on SEO and a seamless user experience.",
+      "url": "/",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires a modern web browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- Immediately sets theme to prevent FOUC -->
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+            },
+        },
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-50 dark:bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
