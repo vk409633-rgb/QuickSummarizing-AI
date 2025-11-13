@@ -1,16 +1,15 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleAI } from "@google/genai";
 import { SummaryType } from '../types';
 
 const API_KEY = process.env.API_KEY;
 
 if (!API_KEY) {
   // This is a client-side check. The API key is expected to be in the environment.
-  // In a real app, you would not expose the key and use a backend proxy.
-  // For this exercise, we assume it's available.
+  // In a real app, you would not expose the key and would instead call your own backend.
   console.warn("API key not found. Please set the API_KEY environment variable.");
 }
 
-const ai = new GoogleGenAI({ apiKey: API_KEY });
+const ai = new GoogleAI({ apiKey: API_KEY });
 
 const getInstruction = (type: SummaryType, hasText: boolean, hasImage: boolean): string => {
     let subject = "";
